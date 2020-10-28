@@ -7,8 +7,8 @@ static const char *fonts[]          = { "IBM 3270:size=13", "micon:size=13" };
 
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 
-static const char col_bg[]          = "#26263A";
-static const char col_bg_f[]        = "#2E2E46";
+static const char col_bg[]          = "#050505";
+static const char col_bg_f[]        = "#121212";
 static const char col_br_f[]        = "#34344B";
 static const char col_fg[]          = "#bbbbbb";
 static const char col_fg_f[]        = "#eeeeee";
@@ -19,8 +19,8 @@ static const char col_magenta[]     = "#894BA4";
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { col_fg, col_bg },
-	[SchemeSel] = { col_fg, col_magenta },
-	[SchemeOut] = { col_fg, col_cyan }
+	[SchemeSel] = { col_fg, col_bg_f },
+	[SchemeOut] = { col_fg, col_bg_f }
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
